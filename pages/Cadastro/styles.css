@@ -1,0 +1,75 @@
+.cadastro-container {
+  height: 100vh;
+  display: flex;
+}
+
+.cadastro-container_left {
+  width: 60%;
+  max-height: 100dvh;
+
+  @media (max-width: 1010px) {
+    display: none;
+  }
+}
+
+.cadastro-container_left_img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.cadastro-container_right {
+  width: 40%;
+  height: 100vh;
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+
+  @media (max-width: 1010px) {
+    width: initial;
+  }
+}
+
+#cadastroForm {
+  width: 100%;
+}
+
+.cadastro-container_right_campos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+}
+
+.cadastro-container_right_titulo {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.cadastro-container_right_subtitulo {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0px 15px 0px;
+}
+
+.cadastro-container_right_container-input {
+  display: flex;
+  flex-direction: column;
+}
+
+#salvar {
+  background-color: #145320;
+  color: #fff;
+}
+
+#salvar:hover {
+  background-color: #21c43c;
+  color: #fff;
+  border-color: #21c43c;
+  opacity: 1;
+}

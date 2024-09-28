@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>Pagamento</title>
+  </head>
+  <body>
+    <div class="pagamento-container">
+      <div class="bloco-pagamento">
+        <h1>Pagamento</h1>
+        <form
+          id="pagamentoForm"
+          onsubmit="window.location.href='../PagamentoFinalizado/pagamentoFinalizado.html'; return false;"
+        >
+          <div class="container-input">
+            <label for="bandeira">Bandeira do Cartão:</label>
+            <select id="bandeira" name="bandeira" required>
+              <option value="visa">Visa</option>
+              <option value="mastercard">Mastercard</option>
+              <option value="amex">American Express</option>
+            </select>
+          </div>
+
+          <div class="container-input">
+            <label for="numeroCartao">Número do Cartão:</label>
+            <input
+              type="number"
+              id="numeroCartao"
+              name="numeroCartao"
+              required
+            />
+          </div>
+
+          <div class="container-input">
+            <label for="dataExpiracao">Data de Expiração:</label>
+            <input
+              type="number"
+              id="dataExpiracao"
+              name="dataExpiracao"
+              placeholder="MM/AA"
+              required
+            />
+          </div>
+
+          <div class="container-input">
+            <label for="codigoSeguranca">Código de Segurança:</label>
+            <input
+              type="number"
+              id="codigoSeguranca"
+              name="codigoSeguranca"
+              required
+            />
+          </div>
+
+          <button type="submit" id="finalizarPagamento">
+            Finalizar Pagamento
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
